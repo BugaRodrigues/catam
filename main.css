@@ -1,3 +1,5 @@
+
+
 body {
     height: 100vh;
     width: 100vw;
@@ -25,61 +27,88 @@ br {
 }
 
 #board {
+    position: absolute;
     display: flex ;
     flex-flow:row wrap;
     align-items: center;
     justify-content: center;
-    height: 95vh;
-    width: 75vw;
+    height: 750px;
+    width: 850px;
     background-color: black;
-    
-} 
+    border-radius: 20%;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    width: 100%;
+}#r1 {
+    align-self: first baseline;
+}#r2 {
+    top: -25px;
+}#r3 {
+    top: -50px;
+}#r4 {
+    top: -75px;
+}#r5 {
+    top: -101px;
+}#r6 {
+    top: -125px;
+}#r7 {
+    top: -150px;
+}#r8 {
+    top: -175px;
+}#r9 {
+    top: -200px;
+}
+
 
 .ocean {
-    height: 12%;
-    width: 10%;
+    height: 105px;
+    width: 105px;
     background-color: lightskyblue;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transform: rotate(90deg);
+    top: -30px;
 }
 .forest {
-    height: 12%;
-    width: 10%;
+    height: 105px;
+    width: 105px;
     background-color: greenyellow;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transform: rotate(90deg);
 }
 .country {
-    height: 12%;
-    width: 10%;
+    height: 105px;
+    width: 105px;
     background-color: green;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transform: rotate(90deg);
 }
 .mountain {
-    height: 12%;
-    width: 10%;
+    height: 105px;
+    width: 105px;
     background-color: gray;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transform: rotate(90deg);
 }
 .farm {
-    height: 12%;
-    width: 10%;
+    height: 105px;
+    width: 105px;
     background-color: yellow;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transform: rotate(90deg);
 }
 .mining {
-    height: 12%;
-    width: 10%;
+    height: 105px;
+    width: 105px;
     background-color: orange;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transform: rotate(90deg);
 }
 .desert {
-    height: 12%;
-    width: 10%;
+    height: 105px;
+    width: 105px;
     background-color: burlywood;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transform: rotate(90deg);
