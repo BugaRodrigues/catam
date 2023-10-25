@@ -26,6 +26,11 @@ br {
     flex-wrap: wrap;
 }
 
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 #board {
     position: absolute;
     display: flex ;
@@ -42,26 +47,7 @@ br {
     position: relative;
     display: flex;
     width: 100%;
-}#r1 {
-    align-self: first baseline;
-}#r2 {
-    top: -25px;
-}#r3 {
-    top: -50px;
-}#r4 {
-    top: -75px;
-}#r5 {
-    top: -101px;
-}#r6 {
-    top: -125px;
-}#r7 {
-    top: -150px;
-}#r8 {
-    top: -175px;
-}#r9 {
-    top: -200px;
 }
-
 .ocean {
     height: 105px;
     width: 105px;
@@ -111,4 +97,46 @@ br {
     background-color: burlywood;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transform: rotate(90deg);
+}
+
+#player_bar {
+    position: absolute;
+    display: grid;
+    height: 100%;
+    width: 650px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+#player_1, #player_2, #player_3, #player_4 {
+    display: flex;
+    height: 150px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.525);
+    margin-top: 25px;
+    align-items: center;
+    justify-content: left;
+}
+#p_header {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+    text-align: center;
+}
+.itens {
+    display: grid;
+    margin-left: 10px;
+}.itens > i {
+    margin: 5px;
+}
+
+
+#construct_bar {
+    position: absolute;
+    display: grid;
+    height: 100%;
+    width: 500px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.425);
 }
