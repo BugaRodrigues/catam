@@ -41,6 +41,7 @@ p {
     width: 850px;
     background-color: black;
     border-radius: 20%;
+    transform: scale(95%);
 }
 
 .row {
@@ -99,15 +100,29 @@ p {
     transform: rotate(90deg);
 }
 
+button {
+    position: absolute;
+    right: 600px;
+    top: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(151, 124, 124);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}button:hover{
+    box-shadow: inset -2px -2px 6px rgba(0, 0, 0, 0.668);
+    cursor: pointer;
+}
+
+
 #player_bar {
     position: absolute;
     display: grid;
     height: 100%;
-    width: 650px;
+    width: 550px;
     right: 0;
     background-color: rgba(0, 0, 0, 0.425);
 }
-
 #player_1, #player_2, #player_3, #player_4 {
     display: flex;
     height: 150px;
