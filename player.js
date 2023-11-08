@@ -16,38 +16,38 @@ class Player {
     }
  
     set farm(farm) {
-     this.farm += farm
+        this.farm += farm
     }
     get farm() {
-     return this.farm
+        return this.farm
     }
  
     set stone(stone) {
-     this.stone += stone
+        this.stone += stone
     }
     get stone() {
-     return this.stone
+        return this.stone
     }
  
     set food(food) {
-     this.food += food
+        this.food += food
     }
     get food() {
-     return this.food
+        return this.food
     }
  
     set mining(mining) {
-     this.mining += mining
+        this.mining += mining
     }
     get mining() {
-     return this.mining
+        return this.mining
     }
  
     set wood(wood) {
-     this.wood += wood
+        this.wood += wood
     }
     get wood() {
-     return this.wood
+        return this.wood
     }
 
     set road(road) {

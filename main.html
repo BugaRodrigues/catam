@@ -113,6 +113,7 @@
                 <i style="color: green;" class="fa-solid fa-tree"> 0 </i>
                 <i style="color: gray;" class="fa-solid fa-cubes"> 0 </i>
             </div>
+            <div class="player_cards"></div>
         </div>
 
         <div id="player_2" class="player">
@@ -126,6 +127,7 @@
                 <i style="color: green;" class="fa-solid fa-tree"> 0 </i>
                 <i style="color: gray;" class="fa-solid fa-cubes"> 0 </i>
             </div>
+            <div class="player_cards"></div>
         </div>
 
         <div id="player_3" class="player">
@@ -139,6 +141,7 @@
                 <i style="color: green;" class="fa-solid fa-tree"> 0 </i>
                 <i style="color: gray;" class="fa-solid fa-cubes"> 0 </i>
             </div>
+            <div class="player_cards"></div>
         </div>
 
         <div id="player_4" class="player">
@@ -152,17 +155,56 @@
                 <i style="color: green;" class="fa-solid fa-tree"> 0 </i>
                 <i style="color: gray;" class="fa-solid fa-cubes"> 0 </i>
             </div>
+            <div class="player_cards"></div>
         </div>
     </div>
 
     <div id="construct_bar">
-        <div id="road"></div>
+        <div id="road" onclick="construct(this.id)">
+            <div class="icon">
+                <img src="Items/Road/pontes.png" style="rotate: 0deg;">
+            </div>
+            <div class="recipe">
+                <i style="color: green;" class="fa-solid fa-tree"> 1 </i>
+                <i style="color: lightskyblue;" class="fa-solid fa-gem"> 1 </i>
+            </div>
+        </div>
 
-        <div id="villa"></div>
+        <div id="villa" onclick="construct(this.id)">
+            <div class="icon">
+                <img src="Items/Village/aldeia.png" style="rotate: 0deg;">
+            </div>
+            <div class="recipe">
+                <i style="color: green;" class="fa-solid fa-tree"> 1 </i>
+                <i style="color: lightskyblue;" class="fa-solid fa-gem"> 1 </i>
+                <i style="color: yellow;" class="fa-solid fa-wheat-awn"> 1 </i>
+                <i style="color: burlywood;" class="fa-solid fa-drumstick-bite"> 1 </i>
+            </div>
+        </div>
 
-        <div id="city"></div>
+        <div id="city" onclick="construct(this.id)">
+            <div class="icon">
+                <img src="Items/City/city.png" style="rotate: 0deg;">
+            </div>
+            <div class="recipe">
+                <i style="color: yellow;" class="fa-solid fa-wheat-awn">  </i>
+                <i style="color: yellow;" class="fa-solid fa-wheat-awn"> 2 </i>
+                <i style="color: gray;" class="fa-solid fa-cubes">  </i>
+                <i style="color: gray;" class="fa-solid fa-cubes">  </i>
+                <i style="color: gray;" class="fa-solid fa-cubes"> 3 </i>
+            </div>
+        </div>
 
-        <div id="progress"></div>
+        <div id="progress" onclick="construct(this.id)">
+            <div class="icon">
+                <img src="Cards/Progress/progress.png" style="rotate: 0deg;">
+            </div>
+            <div class="recipe">
+                <i style="color: yellow;" class="fa-solid fa-wheat-awn"> 1 </i>
+                <i style="color: burlywood;" class="fa-solid fa-drumstick-bite"> 1 </i>
+                <i style="color: gray;" class="fa-solid fa-cubes"> 1 </i>
+            </div>
+        </div>
     </div>
 </body>
 

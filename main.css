@@ -1,5 +1,3 @@
-
-
 body {
     height: 100vh;
     width: 100vw;
@@ -145,13 +143,42 @@ button {
 }.itens > i {
     margin: 5px;
 }
+.player_cards {
+    height: 125px;
+    width: 300px;
+    background-color: rgba(128, 128, 128, 0.543);
+    margin-left: 15px;
+}
 
 
 #construct_bar {
     position: absolute;
     display: grid;
     height: 100%;
-    width: 500px;
+    width: 550px;
     left: 0;
     background-color: rgba(0, 0, 0, 0.425);
+}
+#construct_bar > div {
+    height: 150px;
+    width: 500px;
+    margin-top: 25px;
+    background-color:rgba(255, 228, 196, 0.427);
+    border: 3px solid black;
+}
+#construct_bar > div:hover {
+    cursor: pointer;
+    background-color: rgba(255, 228, 196, 0.68);
+}
+.icon {
+    margin-left: -350px;
+}
+.recipe {
+    position: absolute;
+    left: 200px;
+    margin-top: 75px;
+}
+.recipe > i {
+    scale: 200%;
+    margin-right: 40px;
 }

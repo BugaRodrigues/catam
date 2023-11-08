@@ -1,10 +1,10 @@
 window.onload = () => {
     randomBoard()
 
-    let player_1 = new Player()
-    let player_2 = new Player()
-    let player_3 = new Player()
-    let player_4 = new Player()
+    var player_1 = new Player()
+    var player_2 = new Player()
+    var player_3 = new Player()
+    var player_4 = new Player()
 }   
 
 function randomBoard() {
@@ -29,18 +29,20 @@ function randomBoard() {
 
 function end_turn() {
     document.body.style.opacity = "5%"  
+    let div = document.createElement('div')
+
     setTimeout(() => {
         let num = Number(Math.floor(Math.random() * 29))
-        
-        let div = document.createElement('div')
-        div.style.position = "absolute"
-        div.style.height = "100px"
-        div.style.width = "100px"
-        div.style.backgroundColor = "black"
-        document.body.appendChild(div)
-        div.style.opacity = "100%"
+
     }, (1 * 1000))
 
-    setTimeout(() => {document.body.style.opacity = "100%"}, (3 * 1000))
+    setTimeout(() => {
+        document.body.style.opacity = "100%"
+        div.remove()
+    }, (3 * 1000))
+}
+
+function construct(id) {
+    alert(id)
 }
 
